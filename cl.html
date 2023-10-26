@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #161e27, #1a232e);
+            box-shadow: 10px 10px 33px #141c24,
+                -10px -10px 33px #1c2632;
+
+        }
+
+        input {
+            height: 120px;
+            width: 346px;
+            border-radius: 30px;
+
+            border: none;
+            text-align: right;
+            font-size: 30px;
+            background-color: rgb(0, 0, 0);
+            color: whitesmoke;
+            pointer-events: none;
+
+        }
+
+        .buttons {
+
+            height: 100%;
+
+            background-color: rgb(65, 61, 61);
+            padding-left: 11px;
+            border-radius: 30px;
+
+
+
+        }
+
+        button {
+            /* padding: 10px; */
+            height: 60px;
+            width: 60px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: bolder;
+            cursor: pointer;
+            border-radius: 50%;
+            margin: 10px;
+            border: rgb(152, 16, 16) 1px solid;
+        }
+
+        .btn-yellow {
+            background-color: rgb(255, 153, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        .btn-yellow:hover {
+            border-radius: 50%;
+            background: #34c62a;
+            box-shadow: inset 19px 19px 38px #22831c,
+                inset -19px -19px 38px #46ff38;
+        }
+
+        .btn-clear {
+            background-color: red;
+        }
+
+        .btn-gray:hover {
+            border-radius: 50%;
+            background: #7300ff;
+            box-shadow: inset 19px 19px 38px #4c00a8,
+                inset -19px -19px 38px #9a00ff;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <input type="text" class="screen" />
+        </form>
+        <div class="buttons">
+            <button class="btn btn-yellow">*</button>
+            <button class="btn btn-yellow">/</button>
+            <button class="btn btn-yellow">-</button>
+            <button class="btn btn-clear">C</button>
+
+            <button class="btn btn-gray">7</button>
+            <button class="btn btn-gray">8</button>
+            <button class="btn btn-gray">9</button>
+
+            <button class="btn btn-gray">+</button>
+            <button class="btn btn-gray">4</button>
+            <button class="btn btn-gray">5</button>
+            <button class="btn btn-gray">6</button>
+            <button class="btn btn-gray">.</button>
+            <button class="btn btn-gray">1</button>
+            <button class="btn btn-gray">2</button>
+            <button class="btn btn-gray">3</button>
+            <button class="btn btn-yellow">=</button>
+        </div>
+    </div>
+    <script src="cl.js"></script>
+</body>
+
+</html>
